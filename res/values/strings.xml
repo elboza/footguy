@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FootguyActivity!</string>
+    <string name="app_name">Footguy</string>
+    <string-array name="myColors">
+        <item>white</item>
+        <item>yellow</item>
+        <item>lt gray</item>
+        <item>red</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>cyan</item>
+        <item>magenta</item>
+        <item>gray</item>
+        <item>black</item>
+    </string-array>
+<string name="author">
+<![CDATA[
+ _______________________ \n
+/ footguy port for      \ \n
+| Android. by iazasoft. | \n
+\ 2012                  / \n
+ ----------------------- \n
+        \   ^__^ \n
+         \  (oo)\_______ \n
+            (__)\       )\/\ \n
+                ||----w | \n
+                ||     || \n
+</pre>
+]]>
+</string>
+</resources>
