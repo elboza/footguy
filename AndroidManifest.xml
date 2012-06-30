@@ -13,10 +13,13 @@
     		<intent-filter>
 	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 	        <action android:name="com.iazasoft.footguy.WIDGET_UPDATE" />
+	        <action android:name="com.iazasoft.footguy.WIDGET_PREFS" />
+	        <action android:name="com.iazasoft.footguy.EDIT_PREFS" />
 		    </intent-filter>
 	    <meta-data android:name="android.appwidget.provider"
         android:resource="@xml/footguy_info" />
 		</receiver>
+		<service android:enabled="true" android:name=".Footguy$UpdateService" />
         <activity android:name="Prefs"></activity>
     </application>
 
