@@ -1,3 +1,13 @@
+/*****************************************************************
+ * 
+ * 	Footguy for Android
+ * 
+ * by Fernando Iazeolla
+ * 
+ * this code is distributed under GPLv2 licence.
+ * 
+ * 
+ *****************************************************************/
 package com.iazasoft.footguy;
 
 import android.app.Activity;

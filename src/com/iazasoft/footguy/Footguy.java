@@ -1,3 +1,13 @@
+/*****************************************************************
+ * 
+ * 	Footguy for Android
+ * 
+ * by Fernando Iazeolla
+ * 
+ * this code is distributed under GPLv2 licence.
+ * 
+ * 
+ *****************************************************************/
 package com.iazasoft.footguy;
 
 import java.text.DateFormat;
@@ -36,12 +46,12 @@ public class Footguy extends AppWidgetProvider {
         public void onStart(Intent intent, int startId) {
         	//Toast.makeText(this, "service",Toast.LENGTH_SHORT).show();
         	if(FOOTGUY_WIDGET_UPDATE.equals(intent.getAction())){
-        		Log.d(LOG_TAG,"update action");
+        		//Log.d(LOG_TAG,"update action");
         		//Toast.makeText(this, "update service",Toast.LENGTH_SHORT).show();
         		footTap(this);
         	} 
         	else if(FOOTGUY_WIDGET_PREFS.equals(intent.getAction())){
-        			Log.d(LOG_TAG,"prefs action");
+        			//Log.d(LOG_TAG,"prefs action");
         			//Toast.makeText(this, "prefs service",Toast.LENGTH_SHORT).show();
         			LoadPreferences(this);
         	}
