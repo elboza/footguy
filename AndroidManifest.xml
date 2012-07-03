@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iazasoft.footguy"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.1" >
 
-    <uses-sdk android:minSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
 
     <application
         android:icon="@drawable/footguy_ic"
@@ -14,6 +14,7 @@
 	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 	        <action android:name="com.iazasoft.footguy.WIDGET_UPDATE" />
 	        <action android:name="com.iazasoft.footguy.WIDGET_PREFS" />
+	        <action android:name="com.iazasoft.footguy.SHOW_UPTIME" />
 	        <action android:name="com.iazasoft.footguy.EDIT_PREFS" />
 		    </intent-filter>
 	    <meta-data android:name="android.appwidget.provider"
