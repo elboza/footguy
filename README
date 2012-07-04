@@ -1,13 +1,15 @@
 footguy widget for Android.
 
-by iazasoft. 2012.
 
 a port of the famous 'footguy' to Android plartform.
 
-tap the widget to get droid's system uptime.
-tap twice the widget to open preferences.
+-: put the widget into home screen.
+-: single tap on widget shows droid's system uptime.
+-: double tap on widget opens widget's preferences activity.
 
 this software is distributed under GPLv2 licence.
+by iazasoft.
+2012.
 
 AUTHOR
 fernando iazeolla

@@ -27,7 +27,13 @@
             (__)\       )\/\ \n
                 ||----w | \n
                 ||     || \n
-</pre>
+]]>
+</string>
+<string name="helper">
+<![CDATA[
+<b>-:</b> put the widget into home screen <br/> <br/>
+<b>-:</b> <b>single tap</b> on widget shows droid\'s system uptime <br/> <br/>
+<b>-:</b> <b>double tap</b> on widget opens widget\'s preferences activity. <br/>
 ]]>
 </string>
 </resources>

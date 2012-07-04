@@ -59,7 +59,6 @@ public class Prefs extends Activity {
 	    ckBorder.setOnClickListener(new CheckBox.OnClickListener(){
 	    	@Override
 	    	public void onClick(View arg0){
-	    		String res;
 	    		boolean mybool;
 	    		if(ckBorder.isChecked()) {mybool=true;} else {mybool=false;}
 	    		SavePreferencesBool("ckBorder",mybool);
@@ -68,7 +67,6 @@ public class Prefs extends Activity {
 	    ckBackground.setOnClickListener(new CheckBox.OnClickListener(){
 	    	@Override
 	    	public void onClick(View arg0){
-	    		String res;
 	    		boolean mybool;
 	    		if(ckBackground.isChecked()) {mybool=true;ckBorder.setEnabled(true);} else {mybool=false;ckBorder.setEnabled(false);}
 	    		SavePreferencesBool("ckBackground",mybool);
@@ -77,7 +75,7 @@ public class Prefs extends Activity {
 	    lstColor.setOnItemSelectedListener(new OnItemSelectedListener() {
 	        @Override
 	        public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-	            int item = lstColor.getSelectedItemPosition();
+	            //int item = lstColor.getSelectedItemPosition();
 	            SavePreferencesStr("FootguyColor",lstColor.getSelectedItem().toString());
 	        }
 
