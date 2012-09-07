@@ -139,14 +139,19 @@ public class Footguy extends AppWidgetProvider {
             AppWidgetManager manager = AppWidgetManager.getInstance(this);
             manager.updateAppWidget(thisWidget, views); 
             
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTimeZone(TimeZone.getTimeZone("GMT"));
-            calendar.setTimeInMillis(SystemClock.elapsedRealtime());
-            int h=calendar.get(Calendar.HOUR);
-            int m=calendar.get(Calendar.MINUTE);
-            int s=calendar.get(Calendar.SECOND);
-            String uptime=String.format("droid-uptime: %02dh %02dm %02ds",h,m,s);
-			Toast.makeText(context, uptime,Toast.LENGTH_SHORT).show();           
+            //Calendar calendar = Calendar.getInstance();
+            //calendar.setTimeZone(TimeZone.getTimeZone("GMT"));
+            //calendar.setTimeInMillis(SystemClock.elapsedRealtime());
+            long time=(SystemClock.elapsedRealtime())/1000;
+            int hh=Math.round(time/3600);
+            int mm=Math.round((time/60)%60);
+            int ss=Math.round(time%60);
+            //int h=calendar.get(Calendar.HOUR);
+            //int m=calendar.get(Calendar.MINUTE);
+            //int s=calendar.get(Calendar.SECOND);
+            //String uptime=String.format("droid-uptime: %02dh %02dm %02ds",h,m,s);
+            String uptime=String.format("droid-uptime: %02dh %02dm %02ds",hh,mm,ss);
+			Toast.makeText(context, uptime,Toast.LENGTH_SHORT).show();
 		}
         private int mparseColor(String s){
     		if(s.equals("white")) return Color.WHITE;
