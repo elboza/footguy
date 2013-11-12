@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <dimen name="widthMax2x1">146dp</dimen>
+        <dimen name="heightMax2x1">72dp</dimen>
+        <dimen name="width2x1">72dp</dimen>
+        <dimen name="height2x1">72dp</dimen>
+        <dimen name="marginBorder">3dip</dimen>
+        <color name="terminalBkg">#dd003000</color>
+        <color name="borderColor">#00cc00</color>
+        <color name="title">#00ff00</color>
+        <color name="text">#00cc00</color>
+    </resources>
