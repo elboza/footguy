@@ -85,7 +85,10 @@ public class Footguy extends AppWidgetProvider {
                     n=1;
             }
             x++;
+<<<<<<< HEAD
             //Log.d("FootguyAPP","tap");
+=======
+>>>>>>> c831e843652dc6ca2a62322dace8c60f2f1a5ed9
             if(x==120) n=2;
             if(x>121) x=0;
             if (tap>0) tap++;
