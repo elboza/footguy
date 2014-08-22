@@ -52,13 +52,6 @@
                     android:layout_marginBottom="40dp"
                     android:entries="@array/myColors" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="=^_^="
-                    android:typeface="monospace" android:gravity="bottom" android:layout_marginBottom="5dp"/>
-
                 <Button
                     android:id="@+id/btPrefsOk"
                     android:layout_width="wrap_content"
@@ -66,6 +59,13 @@
                     android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:text="    Ok    " />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="=^_^="
+                    android:typeface="monospace" android:gravity="bottom" android:layout_marginBottom="5dp"/>
 
             </LinearLayout>
 

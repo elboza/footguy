@@ -40,7 +40,7 @@ public class Footguy extends AppWidgetProvider {
 	public static String FOOTGUY_EDIT_PREFS="com.iazasoft.footguy.EDIT_PREFS";
 	public static AlarmManager alarmManager;
 	AlarmManager alarmManager2;
-	public static CharSequence footguy_cs[] = { " oo\n<!>\n_!/", " oo\n<!>\n_!_" ,"=^_^=",};
+	public static CharSequence footguy_cs[] = { " oo\n<!>\n_!/", " oo\n<!>\n_!_" ,"=^_^="," o-\n<!>\n_!/"};
 	static int x=0,tap=0;
 	
 	public static class UpdateService extends Service {
@@ -86,7 +86,7 @@ public class Footguy extends AppWidgetProvider {
             }
             x++;
             //Log.d("FootguyAPP","tap");
-            if(x==120) n=2;
+            if(x==120) n=3;
             if(x>121) x=0;
             if (tap>0) tap++;
             if(tap==2){
