@@ -207,7 +207,7 @@ public class Footguy extends AppWidgetProvider {
         //Calendar calendar = Calendar.getInstance();
         //calendar.setTimeInMillis(System.currentTimeMillis());
         //calendar.add(Calendar.SECOND, 1);
-        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime()+1000*70, 1000, createClockTickIntent(context));
+        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime()+1000*10, 1000, createClockTickIntent(context));
 	}
 	private PendingIntent createClockTickIntent(Context context) {
         Intent intent = new Intent(FOOTGUY_WIDGET_UPDATE);

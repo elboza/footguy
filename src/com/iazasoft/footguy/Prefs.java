@@ -29,6 +29,7 @@ public class Prefs extends Activity {
 	Spinner lstColor;
 	SeekBar sbFontSize;
 	TextView footguyFontSizeText;
+	Button btOk;
 	int fontsize=12,deltafont=4;
 	
 	@Override
@@ -55,6 +56,7 @@ public class Prefs extends Activity {
 	    ckBackground=(CheckBox)findViewById(R.id.ckBackground);
 	    lstColor=(Spinner)findViewById(R.id.lstColor);
 	    sbFontSize=(SeekBar)findViewById(R.id.seekBar1);
+	    btOk=(Button)findViewById(R.id.btPrefsOk);
 	    footguyFontSizeText=(TextView)findViewById(R.id.footguyFontSizeText);
 	    ckBorder.setOnClickListener(new CheckBox.OnClickListener(){
 	    	@Override
@@ -102,8 +104,14 @@ public class Prefs extends Activity {
                  
             }
      });
+	    btOk.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	sendUpdateTrigger();
+                finish();
+            }
+        });
 	    TextView foo = (TextView)findViewById(R.id.textView2);
-	    String author=items[4] + "footguy for Android. by iazasoft." + "\n2012.";
+	    String author=items[4] + "footguy for Android.\nby Fernando Iazeolla. \n(c) iazasoft 2012.";
 	    foo.setText(author);
 	    LoadPreferences();
 	}
