@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:2:1-41:12
+	xmlns:android
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:7:5-73
+	android:targetSdkVersion
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:7:42-71
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:7:15-41
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:9:5-39:19
+	android:label
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:10:9-44
+receiver#com.iazasoft.footguy.Footguy
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:12:9-24:14
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:12:19-42
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE+com.iazasoft.footguy.EDIT_PREFS+com.iazasoft.footguy.SHOW_UPTIME+com.iazasoft.footguy.SLEEP+com.iazasoft.footguy.WAKEUP+com.iazasoft.footguy.WIDGET_PREFS+com.iazasoft.footguy.WIDGET_UPDATE
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:13:7-21:23
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:14:10-77
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:14:18-74
+action#com.iazasoft.footguy.WIDGET_UPDATE
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:15:10-70
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:15:18-67
+action#com.iazasoft.footguy.WIDGET_PREFS
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:16:10-69
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:16:18-66
+action#com.iazasoft.footguy.SHOW_UPTIME
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:17:10-68
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:17:18-65
+action#com.iazasoft.footguy.EDIT_PREFS
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:18:10-67
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:18:18-64
+action#com.iazasoft.footguy.WAKEUP
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:19:13-66
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:19:21-63
+action#com.iazasoft.footguy.SLEEP
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:20:13-65
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:20:21-62
+meta-data#android.appwidget.provider
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:22:6-23:48
+	android:resource
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:23:9-45
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:22:17-58
+service#com.iazasoft.footguy.Footguy$UpdateService
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:25:3-75
+	android:enabled
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:25:12-34
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:25:35-72
+service#com.iazasoft.footguy.TapService
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:26:9-70
+	android:enabled
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:26:18-40
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:26:41-67
+service#com.iazasoft.footguy.ScreenListenerService
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:27:9-31:19
+	android:enabled
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:27:18-40
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:27:41-78
+intent-filter#com.iazasoft.footguy.SCREEN_STATE
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:28:13-30:29
+action#com.iazasoft.footguy.SCREEN_STATE
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:29:25-73
+activity#com.iazasoft.footguy.Prefs
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:32:9-52
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:32:19-40
+activity#com.iazasoft.footguy.FootHelp
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:33:9-38:20
+	android:label
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:33:44-76
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:33:19-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:34:13-37:29
+action#android.intent.action.MAIN
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from /Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/AndroidManifest.xml:36:27-74

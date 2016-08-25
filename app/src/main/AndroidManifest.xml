@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iazasoft.footguy"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23"/>
+
+    <application
+        android:icon="@drawable/footguy_ic"
+        android:label="@string/app_name" >
+        <receiver android:name=".Footguy" >
+    		<intent-filter>
+	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	        <action android:name="com.iazasoft.footguy.WIDGET_UPDATE" />
+	        <action android:name="com.iazasoft.footguy.WIDGET_PREFS" />
+	        <action android:name="com.iazasoft.footguy.SHOW_UPTIME" />
+	        <action android:name="com.iazasoft.footguy.EDIT_PREFS" />
+            <action android:name="com.iazasoft.footguy.WAKEUP" />
+            <action android:name="com.iazasoft.footguy.SLEEP" />
+		    </intent-filter>
+	    <meta-data android:name="android.appwidget.provider"
+        android:resource="@xml/footguy_info" />
+		</receiver>
+		<service android:enabled="true" android:name=".Footguy$UpdateService" />
+        <service android:enabled="true" android:name=".TapService" />
+        <service android:enabled="true" android:name=".ScreenListenerService">
+            <intent-filter>
+                <action android:name="com.iazasoft.footguy.SCREEN_STATE" />
+            </intent-filter>
+        </service>
+        <activity android:name=".Prefs"></activity>
+        <activity android:name=".FootHelp" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
