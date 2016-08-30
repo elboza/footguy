@@ -43,7 +43,7 @@ public class Footguy extends AppWidgetProvider {
 	static Handler mHandler;
 	static Context mContext;
 	private Runnable xTask;
-	private static boolean awake;
+	private static boolean awake=false;
 	
 	public static class UpdateService extends Service {
 		int fontsize=12;
@@ -156,15 +156,15 @@ public class Footguy extends AppWidgetProvider {
 	}
 
 
-	private void wakeup(){
+	private void wakeup(Context c){
 
-		Intent i0 = new Intent(mContext,TapService.class);
-		mContext.startService(i0);
+		Intent i0 = new Intent(c,TapService.class);
+		c.startService(i0);
 	}
 
-	private void sleep(){
-		Intent i0 = new Intent(mContext,TapService.class);
-		mContext.stopService(i0);
+	private void sleep(Context c){
+		Intent i0 = new Intent(c,TapService.class);
+		c.stopService(i0);
 	}
 
 	@Override
@@ -185,14 +185,14 @@ public class Footguy extends AppWidgetProvider {
 			Log.d("FOOTGUY","wakeup ...");
 			if(awake) Log.d("awake","true");
 			if(!awake) Log.d("awake","false");
-			if(!awake) wakeup();
+			if(!awake) wakeup(context);
 			awake=true;
 		}
 		if(FOOTGUY_SLEEP.equals(intent.getAction())){
 			Log.d("FOOTGUY","sleep ...");
 			if(awake) Log.d("awake","true");
 			if(!awake) Log.d("awake","false");
-			if(awake) sleep();
+			if(awake) sleep(context);
 			awake=false;
 		}
 	}
@@ -200,7 +200,7 @@ public class Footguy extends AppWidgetProvider {
 	public void onDisabled(Context context) {
 		super.onDisabled(context);
 		//mHandler.removeCallbacks(xTask);
-		sleep();
+		sleep(context);
 		Intent i0 = new Intent(context,ScreenListenerService.class);
 		mContext.stopService(i0);
 	}
@@ -211,6 +211,8 @@ public class Footguy extends AppWidgetProvider {
 		awake=false;
 		mContext=context;
 		Toast.makeText(context, "onEnabled",Toast.LENGTH_SHORT).show();
+		Intent i1 = new Intent(context,UpdateService.class);
+		mContext.startService(i1);
 		Intent updateintent=new Intent(FOOTGUY_WIDGET_PREFS);
 		alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 		alarmManager2 = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
@@ -221,7 +223,7 @@ public class Footguy extends AppWidgetProvider {
 
         //alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime()+1000*10, 1000, createClockTickIntent(context));
 
-		wakeup();
+		wakeup(context);
 		Intent i0 = new Intent(context,ScreenListenerService.class);
 		mContext.startService(i0);
 	}

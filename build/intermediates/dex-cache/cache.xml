@@ -5,14 +5,14 @@
         jar="/Users/drugo/my_closet/src/AndroidStudio/footguy/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="22.0.1"
-        sha1="7cb7f4bdb74f55ad1b626f260e9bc294d634f9f0">
+        sha1="a45121635198069444fbef0cb4b147f9d598fcbe">
         <dex dex="/Users/drugo/my_closet/src/AndroidStudio/footguy/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a9d417164860d0c08e156ab1fb130dbcb7b7e649/classes.dex" />
     </item>
     <item
         jar="/Users/drugo/my_closet/src/AndroidStudio/footguy/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="22.0.1"
-        sha1="4be020af2450b2aee72ac3d85f2482c0f269d7ca">
+        sha1="37ec20eca7c7df3ec1f5d0dd053007914a5baee5">
         <dex dex="/Users/drugo/my_closet/src/AndroidStudio/footguy/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_97f70ab8082f17840314526cd01c33a747e44486/classes.dex" />
     </item>
 

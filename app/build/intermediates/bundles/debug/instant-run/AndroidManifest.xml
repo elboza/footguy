@@ -31,12 +31,8 @@
         <service
             android:name="com.iazasoft.footguy.Footguy$UpdateService"
             android:enabled="true" />
-        <service
-            android:name="com.iazasoft.footguy.TapService"
-            android:enabled="true" />
-        <service
-            android:name="com.iazasoft.footguy.ScreenListenerService"
-            android:enabled="true" >
+        <service android:name="com.iazasoft.footguy.TapService" />
+        <service android:name="com.iazasoft.footguy.ScreenListenerService" >
             <intent-filter>
                 <action android:name="com.iazasoft.footguy.SCREEN_STATE" />
             </intent-filter>

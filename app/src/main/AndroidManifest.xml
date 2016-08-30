@@ -9,7 +9,7 @@
     <application
         android:icon="@drawable/footguy_ic"
         android:label="@string/app_name" >
-        <receiver android:name=".Footguy" >
+        <receiver android:name="com.iazasoft.footguy.Footguy" >
     		<intent-filter>
 	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 	        <action android:name="com.iazasoft.footguy.WIDGET_UPDATE" />
@@ -22,15 +22,15 @@
 	    <meta-data android:name="android.appwidget.provider"
         android:resource="@xml/footguy_info" />
 		</receiver>
-		<service android:enabled="true" android:name=".Footguy$UpdateService" />
-        <service android:enabled="true" android:name=".TapService" />
-        <service android:enabled="true" android:name=".ScreenListenerService">
+		<service android:enabled="true" android:name="com.iazasoft.footguy.Footguy$UpdateService" />
+        <service android:name="com.iazasoft.footguy.TapService" />
+        <service android:name="com.iazasoft.footguy.ScreenListenerService">
             <intent-filter>
                 <action android:name="com.iazasoft.footguy.SCREEN_STATE" />
             </intent-filter>
         </service>
-        <activity android:name=".Prefs"></activity>
-        <activity android:name=".FootHelp" android:label="@string/app_name">
+        <activity android:name="com.iazasoft.footguy.Prefs"></activity>
+        <activity android:name="com.iazasoft.footguy.FootHelp" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
