@@ -18,7 +18,7 @@ public class TapService extends Service {
     public void onCreate() {
         super.onCreate();
 
-        Log.d("FOOTGUY","start tap service ...");
+        //Log.d("FOOTGUY","start tap service ...");
         mHandler=new Handler();
 
         xTask = new Runnable() {
@@ -52,7 +52,7 @@ public class TapService extends Service {
 
     @Override
     public void onDestroy() {
-        Log.d("FOOTGUY","stop tap service ...");
+        //Log.d("FOOTGUY","stop tap service ...");
         mHandler.removeCallbacks(xTask);
 
 

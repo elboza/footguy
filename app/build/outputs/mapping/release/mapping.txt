@@ -1,0 +1,115 @@
+com.iazasoft.footguy.FootHelp -> com.iazasoft.footguy.FootHelp:
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+com.iazasoft.footguy.FootHelp$1 -> com.iazasoft.footguy.a:
+    com.iazasoft.footguy.FootHelp this$0 -> a
+    void <init>(com.iazasoft.footguy.FootHelp) -> <init>
+    void onClick(android.view.View) -> onClick
+com.iazasoft.footguy.Footguy -> com.iazasoft.footguy.Footguy:
+    java.text.DateFormat df -> m
+    java.lang.String FOOTGUY_WIDGET_UPDATE -> a
+    java.lang.String FOOTGUY_WIDGET_PREFS -> b
+    java.lang.String FOOTGUY_SHOW_UPTIME -> c
+    java.lang.String FOOTGUY_EDIT_PREFS -> d
+    java.lang.String FOOTGUY_WAKEUP -> e
+    java.lang.String FOOTGUY_SLEEP -> f
+    android.app.AlarmManager alarmManager -> g
+    android.app.AlarmManager alarmManager2 -> h
+    java.lang.CharSequence[] footguy_cs -> i
+    int x -> j
+    int tap -> k
+    android.content.Context mContext -> l
+    boolean awake -> n
+    void <init>() -> <init>
+    void wakeup(android.content.Context) -> a
+    void sleep(android.content.Context) -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void onDisabled(android.content.Context) -> onDisabled
+    void onEnabled(android.content.Context) -> onEnabled
+    void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+    void <clinit>() -> <clinit>
+com.iazasoft.footguy.Footguy$UpdateService -> com.iazasoft.footguy.Footguy$UpdateService:
+    int fontsize -> a
+    boolean bBorder -> b
+    boolean bBackground -> c
+    void <init>() -> <init>
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void footTap(android.content.Context) -> a
+    void LoadPreferences(android.content.Context) -> b
+    void show_uptime(android.content.Context) -> c
+    int mparseColor(java.lang.String) -> a
+com.iazasoft.footguy.Prefs -> com.iazasoft.footguy.Prefs:
+    java.lang.String FOOTGUY_WIDGET_PREFS -> a
+    java.lang.String FOOTGUY_EDIT_PREFS -> b
+    android.widget.CheckBox ckBorder -> c
+    android.widget.CheckBox ckBackground -> d
+    android.widget.Spinner lstColor -> e
+    android.widget.SeekBar sbFontSize -> f
+    android.widget.TextView footguyFontSizeText -> g
+    android.widget.Button btOk -> h
+    int fontsize -> i
+    int deltafont -> j
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void SavePreferencesStr(java.lang.String,java.lang.String) -> a
+    void SavePreferencesBool(java.lang.String,boolean) -> a
+    void SavePreferencesInt(java.lang.String,int) -> a
+    void LoadPreferences() -> a
+    void sendUpdateTrigger() -> b
+    int mparseColor(java.lang.String) -> a
+    void access$000(com.iazasoft.footguy.Prefs,java.lang.String,boolean) -> a
+    void access$100(com.iazasoft.footguy.Prefs,java.lang.String,java.lang.String) -> a
+    void access$200(com.iazasoft.footguy.Prefs,java.lang.String,int) -> a
+    void access$300(com.iazasoft.footguy.Prefs) -> a
+    void <clinit>() -> <clinit>
+com.iazasoft.footguy.Prefs$1 -> com.iazasoft.footguy.b:
+    com.iazasoft.footguy.Prefs this$0 -> a
+    void <init>(com.iazasoft.footguy.Prefs) -> <init>
+    void onClick(android.view.View) -> onClick
+com.iazasoft.footguy.Prefs$2 -> com.iazasoft.footguy.c:
+    com.iazasoft.footguy.Prefs this$0 -> a
+    void <init>(com.iazasoft.footguy.Prefs) -> <init>
+    void onClick(android.view.View) -> onClick
+com.iazasoft.footguy.Prefs$3 -> com.iazasoft.footguy.d:
+    com.iazasoft.footguy.Prefs this$0 -> a
+    void <init>(com.iazasoft.footguy.Prefs) -> <init>
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.iazasoft.footguy.Prefs$4 -> com.iazasoft.footguy.e:
+    com.iazasoft.footguy.Prefs this$0 -> a
+    void <init>(com.iazasoft.footguy.Prefs) -> <init>
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.iazasoft.footguy.Prefs$5 -> com.iazasoft.footguy.f:
+    com.iazasoft.footguy.Prefs this$0 -> a
+    void <init>(com.iazasoft.footguy.Prefs) -> <init>
+    void onClick(android.view.View) -> onClick
+com.iazasoft.footguy.ScreenBroadcastReceiver -> com.iazasoft.footguy.g:
+    boolean screenOff -> a
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.iazasoft.footguy.ScreenListenerService -> com.iazasoft.footguy.ScreenListenerService:
+    android.content.BroadcastReceiver mReceiver -> a
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+com.iazasoft.footguy.TapService -> com.iazasoft.footguy.TapService:
+    java.lang.String FOOTGUY_WIDGET_UPDATE -> a
+    android.os.Handler mHandler -> b
+    java.lang.Runnable xTask -> c
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    java.lang.Runnable access$000(com.iazasoft.footguy.TapService) -> a
+    void <clinit>() -> <clinit>
+com.iazasoft.footguy.TapService$1 -> com.iazasoft.footguy.h:
+    com.iazasoft.footguy.TapService this$0 -> a
+    void <init>(com.iazasoft.footguy.TapService) -> <init>
+    void run() -> run

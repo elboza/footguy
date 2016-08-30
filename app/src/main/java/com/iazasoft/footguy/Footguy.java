@@ -80,7 +80,7 @@ public class Footguy extends AppWidgetProvider {
                     n=1;
             }
             x++;
-            Log.d("FootguyAPP","tap");
+            //Log.d("FootguyAPP","tap");
             if(x==120) n=3;
             if(x>121) x=0;
             if (tap>0) tap++;
@@ -182,16 +182,16 @@ public class Footguy extends AppWidgetProvider {
 			context.startService(updateintent);
 		}
 		if(FOOTGUY_WAKEUP.equals(intent.getAction())){
-			Log.d("FOOTGUY","wakeup ...");
-			if(awake) Log.d("awake","true");
-			if(!awake) Log.d("awake","false");
+			//Log.d("FOOTGUY","wakeup ...");
+			//if(awake) Log.d("awake","true");
+			//if(!awake) Log.d("awake","false");
 			if(!awake) wakeup(context);
 			awake=true;
 		}
 		if(FOOTGUY_SLEEP.equals(intent.getAction())){
-			Log.d("FOOTGUY","sleep ...");
-			if(awake) Log.d("awake","true");
-			if(!awake) Log.d("awake","false");
+			//Log.d("FOOTGUY","sleep ...");
+			//if(awake) Log.d("awake","true");
+			//if(!awake) Log.d("awake","false");
 			if(awake) sleep(context);
 			awake=false;
 		}
@@ -202,7 +202,7 @@ public class Footguy extends AppWidgetProvider {
 		//mHandler.removeCallbacks(xTask);
 		sleep(context);
 		Intent i0 = new Intent(context,ScreenListenerService.class);
-		mContext.stopService(i0);
+		context.stopService(i0);
 	}
 
 	@Override 
@@ -212,7 +212,7 @@ public class Footguy extends AppWidgetProvider {
 		mContext=context;
 		Toast.makeText(context, "onEnabled",Toast.LENGTH_SHORT).show();
 		Intent i1 = new Intent(context,UpdateService.class);
-		mContext.startService(i1);
+		context.startService(i1);
 		Intent updateintent=new Intent(FOOTGUY_WIDGET_PREFS);
 		alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 		alarmManager2 = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
@@ -225,7 +225,7 @@ public class Footguy extends AppWidgetProvider {
 
 		wakeup(context);
 		Intent i0 = new Intent(context,ScreenListenerService.class);
-		mContext.startService(i0);
+		context.startService(i0);
 	}
 
 	private PendingIntent createClockTickIntent(Context context) {
