@@ -277,8 +277,27 @@
                     "startLine": 40,
                     "startColumn": 4,
                     "startOffset": 1212,
+                    "endColumn": 110,
+                    "endOffset": 1318
+                },
+                "from": {
+                    "file": "/Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1080,
+                        "endColumn": 110,
+                        "endOffset": 1186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 1323,
                     "endColumn": 63,
-                    "endOffset": 1271
+                    "endOffset": 1382
                 },
                 "from": {
                     "file": "/Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/res/values/strings.xml",
@@ -293,12 +312,12 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 1276,
-                    "endLine": 47,
+                    "startOffset": 1387,
+                    "endLine": 48,
                     "endColumn": 9,
-                    "endOffset": 1570
+                    "endOffset": 1681
                 },
                 "from": {
                     "file": "/Users/drugo/my_closet/src/AndroidStudio/footguy/app/src/main/res/values/strings.xml",

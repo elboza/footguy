@@ -67,6 +67,14 @@
                     android:text="=^_^="
                     android:typeface="monospace" android:gravity="bottom" android:layout_marginBottom="5dp"/>
 
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descx"
+                    android:typeface="monospace" android:gravity="bottom" android:layout_marginBottom="5dp"
+                    android:textSize="10dp"/>
+
             </LinearLayout>
 
         </ScrollView>

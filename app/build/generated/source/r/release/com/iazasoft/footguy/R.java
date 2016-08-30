@@ -65,8 +65,9 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f080000;
         public static final int author=0x7f080001;
-        public static final int hello=0x7f080002;
-        public static final int helper=0x7f080003;
+        public static final int descx=0x7f080002;
+        public static final int hello=0x7f080003;
+        public static final int helper=0x7f080004;
     }
     public static final class xml {
         public static final int footguy_info=0x7f040000;

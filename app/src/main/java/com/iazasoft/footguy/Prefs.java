@@ -111,7 +111,7 @@ public class Prefs extends Activity {
             }
         });
 	    TextView foo = (TextView)findViewById(R.id.textView2);
-	    String author=items[4] + "footguy for Android.\nby Fernando Iazeolla. \n# iazasoft 2012-2014.";
+	    String author=items[4]+" ";
 	    foo.setText(author);
 	    LoadPreferences();
 	}
