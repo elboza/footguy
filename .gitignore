@@ -6,6 +6,8 @@ build
 
 bin/
 build/
-grn/
+gen/
 target/
+
+app-release*.apk
 
