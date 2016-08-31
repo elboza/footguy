@@ -1,5 +1,11 @@
 .DS_Store
-gen
-libs
-bin
+.gradle
+.idea
+*.iml
+build
+
+bin/
+build/
+grn/
+target/
 
